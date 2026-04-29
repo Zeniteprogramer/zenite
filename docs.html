@@ -24,227 +24,148 @@ ZNT é uma linguagem de programação criada para ser simples, rápida de aprend
 Ela foi feita com foco em leitura humana, usando comandos curtos, intuitivos e organizados, sem excesso de símbolos complicados.
 Enquanto muitas linguagens focam apenas em executar comandos, o ZNT foi pensado para controlar a lógica de forma clara e inteligente.
 
-O que é o ZNT?
-Se compararmos com outras tecnologias:
+🧠 ZNT Language — Manual
+🌟 O que é o ZNT?
 
-HTML = o esqueleto → estrutura
-CSS = a pele → aparência
-JavaScript = os movimentos → ações e interações
-ZNT = o cérebro → lógica, decisões e controle
+ZNT é uma linguagem de programação feita pra ser:
 
-ZNT é o cérebro do sistema
-Ele decide:
+👉 fácil de ler
+👉 fácil de entender
+👉 tipo “frases humanas” dizendo o que o programa faz
 
-o que acontece
-quando acontece
-como acontece
-por que acontece
+🧩 Pra que serve?
 
-O ZNT organiza o pensamento do sistema.
-Ele não é apenas uma linguagem de programação.
-Ele é o núcleo da execução.
+O ZNT serve pra mandar o computador fazer coisas:
 
-Onde o ZNT pode ser usado?
-ZNT pode ser usado para:
+tomar decisões 🤔
+repetir tarefas 🔁
+guardar informações 📦
+criar sistemas e jogos 🎮
+🧠 Ideia principal
 
-criação de sistemas
-automação de tarefas
-jogos e lógica de gameplay
-inteligência de processos
-scripts rápidos
-bots e sistemas automáticos
-programas desktop
-projetos experimentais
-aprendizado de programação
-controle de dados e decisões
+Pensa assim:
+
+HTML = estrutura da casa
+CSS = pintura da casa
+JS = movimentos
+ZNT = quem manda em tudo (o cérebro) 🧠
+✍️ Como o código funciona
+
+Tudo no ZNT é assim:
+
+comando + valor
 
 Exemplo:
 
-
-HTML constrói a casa
-
-
-CSS pinta a casa
-
-
-JavaScript abre as portas
-
-
-ZNT decide quem pode entrar
-
-
-Por isso o conceito oficial é:
-ZNT
-A linguagem do núcleo
-A linguagem que controla a lógica
-O cérebro por trás da execução
-
-
-A ideia do ZNT
-
-
-fácil para iniciantes
-
-
-poderosa para projetos reais
-
-
-bonita visualmente
-
-com identidade própria
-
-
-organizada para leitura humana
-
-Extensão oficial:
-arquivo.znt
-
-
-Estrutura Básica
-Todo código funciona com:
-keyword + ação + valor
-Exemplo:
 show "Olá mundo"
 
+👉 isso significa: mostrar na tela
 
-Variáveis
-let
-Guarda valores normais.
+📦 VARIÁVEIS (guardar coisas)
 let nome = "Rin"
-mark
-Valor importante.
+
+👉 cria uma informação simples
+
 mark level = 99
-lock
-Valor travado (não muda).
+
+👉 coisa importante
+
 lock game = "ZNT"
-core
-Valor principal/global.
-core app = "Zenite"
-flux
-Altera valor depois.
+
+👉 não pode mudar
+
 flux level = 100
 
+👉 pode mudar depois
 
-Entrada e Saída
-show
-Mostra algo na tela.
-show "Hello"
-echo
-Retorna ou repete valor.
+👀 MOSTRAR E LER
+show "Oi"
+
+👉 mostra na tela
+
 echo nome
-scan
-Recebe entrada do usuário.
+
+👉 repete um valor
+
 let nome = scan
 
+👉 usuário digita algo
 
-Condições
-check
-Primeira verificação.
-check idade >= 18    show "Maior de idade"
-gate
-Segunda condição.
-gate idade >= 16    show "Quase adulto"
-other
-Caso contrário.
-other    show "Menor de idade"
+🤔 DECISÕES (IF / ELSE)
+if idade == 18
+    show "Maior de idade"
 
-Repetição
-loop
-Repete quantidade definida.
-loop 5    show "Executando"
+👉 se for verdade, faz isso
+
+else if idade == 16
+    show "Quase adulto"
+
+👉 outra condição
+
+else
+    show "Menor de idade"
+
+👉 se nada for verdade
+
+🔁 REPETIÇÃO
+loop 5
+    show "Executando"
+
+👉 repete 5 vezes
+
 spin
-Loop infinito.
-spin    show "∞"
-stop
-Para execução.
-stop
-skip
-Pula etapa.
-skip
+    show "∞"
 
+👉 repete sem parar
 
-Funções
-forge
-Cria função.
-forge hello    show "Olá"
-call
-Executa função.
+stop
+
+👉 para tudo
+
+⚙️ FUNÇÕES
+forge hello
+    show "Olá"
+
+👉 cria uma função
+
 call hello
-back
-Retorna valor.
+
+👉 usa a função
+
 back resultado
 
-Texto
-join
-Junta textos.
-join "Olá" " Mundo"
-cut
-Divide textos.
-cut "a,b,c" ","
-find
-Procura algo.
-find "player"
+👉 devolve algo
 
-
-Sistema
-wake
-Inicia processo.
+📁 SISTEMA
 wake sistema
-sleep
-Pausa execução.
+
+👉 liga o sistema
+
 sleep 5
-send
-Envia dados.
+
+👉 espera
+
 send dados
-pull
-Importa ou puxa dados.
+
+👉 envia algo
+
 pull sistema
 
+👉 puxa dados
 
-Extras Exclusivos do ZNT
-spark
-Inicia algo importante.
-spark engine
-shade
-Oculta informação.
-shade senha
-bloom
-Cria crescimento.
-bloom projeto
-drift
-Move dados.
-drift save to backup
-zen
-Modo seguro.
-zen system
+🧪 EXEMPLO SIMPLES COMPLETO
+let nome = "Rin"
+mark level = 99
 
+if level >= 50
+    show "Forte"
+else
+    show "Iniciante"
 
-Comentários
-# comentário normal
-## comentário importante
+forge hello
+    show "Bem-vindo"
 
-
-Regras Gerais
-
-
-ZNT respeita a ordem de execução
-
-
-comandos sempre vêm antes dos valores
-
-
-strings usam aspas
-
-
-blocos usam indentação
-
-
-nomes devem ser simples e claros
-
-
-Exemplo Completo
-core app = "ZNT"let nome = "Rin"mark level = 99check level >= 50    show "Player forte"gate level >= 20    show "Player médio"
-other show "Player iniciante" forge welcome show "Bem-vindo" call  welcome 
+call hello 
 
 
 </pre>
