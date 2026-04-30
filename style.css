@@ -1,18 +1,24 @@
+/* Configurações Gerais */
 body {
   margin: 0;
-  font-family: Arial;
+  font-family: Arial, sans-serif;
   background: #020106;
   color: white;
+  overflow-x: hidden; /* Evita barra de rolagem horizontal indesejada */
 }
 
+/* Fundo com Gradiente Fixo */
 .background {
   position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   background: radial-gradient(circle at top, #120018, #000);
   z-index: -1;
 }
 
+/* Hero Section (Index) */
 .hero {
   display: flex;
   justify-content: center;
@@ -20,22 +26,26 @@ body {
   height: 100vh;
 }
 
+/* Efeito de Vidro (Glassmorphism) */
 .glass {
   padding: 60px;
   border-radius: 20px;
-  background: rgba(10,0,20,0.6);
+  background: rgba(10, 0, 20, 0.6);
   border: 1px solid #2a003f;
   text-align: center;
+  backdrop-filter: blur(10px); /* Deixa o fundo levemente borrado */
 }
 
 .title {
   font-size: 90px;
   color: #b300ff;
+  margin: 10px 0;
 }
 
-.subtitle { color: #bbb; }
-.tag { color: #888; }
+.subtitle { color: #bbb; margin-bottom: 20px; }
+.tag { color: #888; font-size: 14px; text-transform: uppercase; }
 
+/* Botões */
 .buttons { margin-top: 25px; }
 
 .btn {
@@ -44,6 +54,8 @@ body {
   border-radius: 10px;
   text-decoration: none;
   display: inline-block;
+  transition: 0.3s;
+  font-weight: bold;
 }
 
 .download {
@@ -52,26 +64,42 @@ body {
   border: 1px solid #1a0026;
 }
 
+.download:hover { background: #5a00c0; }
+
 .docs {
   background: transparent;
   border: 1px solid #3a0080;
   color: #c77dff;
 }
 
+.docs:hover { background: rgba(58, 0, 128, 0.2); }
+
+/* Estilo da Página de Documentação */
 .back {
   display: inline-block;
   margin: 20px;
   color: #c77dff;
   text-decoration: none;
+  font-size: 18px;
 }
 
 .doc {
-  max-width: 1000px;
-  margin: auto;
-  padding: 50px;
-  background: rgba(10,0,20,0.4);
+  max-width: 900px;
+  margin: 20px auto 50px auto;
+  padding: 40px;
+  background: rgba(10, 0, 20, 0.4);
   border: 1px solid #2a003f;
   border-radius: 15px;
-  white-space: pre-wrap;
+}
+
+/* Estilo do Texto do Manual */
+pre {
+  white-space: pre-wrap;       /* Quebra a linha se for muito longa */
+  word-wrap: break-word;       /* Garante que palavras longas não quebrem o layout */
+  font-family: 'Courier New', Courier, monospace;
   line-height: 1.6;
+  color: #e0e0e0;
+  background: rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  border-radius: 8px;
 }
